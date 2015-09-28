@@ -1,0 +1,183 @@
+/* line 1, ../sass/screen.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, ../sass/screen.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 26, ../sass/screen.scss */
+body {
+  line-height: 1;
+}
+
+/* line 29, ../sass/screen.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 32, ../sass/screen.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 35, ../sass/screen.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 40, ../sass/screen.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 61, ../sass/screen.scss */
+body {
+  background-color: white;
+}
+
+/* line 65, ../sass/screen.scss */
+.clearfix {
+  overflow: auto;
+}
+
+/* line 69, ../sass/screen.scss */
+.logo {
+  float: left;
+}
+
+/* line 73, ../sass/screen.scss */
+.link {
+  padding: 20px 20px 0 0;
+  display: block;
+}
+
+/* line 78, ../sass/screen.scss */
+.link-button {
+  border-top: 5px solid black;
+  margin-bottom: 3px;
+  width: 45px;
+  float: right;
+  clear: right;
+}
+
+/* line 86, ../sass/screen.scss */
+.nav {
+  clear: left;
+  padding-left: 45px;
+}
+
+/* line 91, ../sass/screen.scss */
+ul {
+  list-style: none;
+  width: 100%;
+  margin: auto;
+}
+
+/* line 98, ../sass/screen.scss */
+.page-nav {
+  margin: 10px 0 27px 15px;
+  display: none;
+}
+
+/* line 103, ../sass/screen.scss */
+.page-nav ul li {
+  display: inline-block;
+}
+
+/* line 107, ../sass/screen.scss */
+.page-nav ul li a {
+  background: url(../../images/nav-divider.png) no-repeat 100% 4px;
+  padding: 0 10px 0 10px;
+}
+
+/* line 112, ../sass/screen.scss */
+.footer-nav ul li {
+  display: block;
+}
+
+/* line 116, ../sass/screen.scss */
+h1 {
+  font-size: 20px;
+  font-family: 'Rock Salt', cursive;
+  margin: 32px 0 0 10px;
+  float: left;
+}
+
+/* line 123, ../sass/screen.scss */
+a {
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+/* line 129, ../sass/screen.scss */
+footer .nav {
+  float: left;
+  padding-left: 0px;
+}
+
+/* line 134, ../sass/screen.scss */
+footer ul {
+  float: right;
+}
+
+/* line 138, ../sass/screen.scss */
+.promo-box img {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 144, ../sass/screen.scss */
+  .logo {
+    width: 70px;
+    margin: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 153, ../sass/screen.scss */
+  .logo {
+    width: 170px;
+  }
+
+  /* line 157, ../sass/screen.scss */
+  .promo-box {
+    display: inline-block;
+    width: 49%;
+  }
+
+  /* line 162, ../sass/screen.scss */
+  .promo-box:last-child {
+    display: block;
+    margin: auto;
+  }
+
+  /* line 167, ../sass/screen.scss */
+  ul li {
+    display: inline-block;
+  }
+}
