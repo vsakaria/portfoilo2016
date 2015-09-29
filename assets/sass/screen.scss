@@ -113,6 +113,12 @@ ul {
     display: block;
 }
 
+.promo-heading {
+    font-family: 'Rock Salt';
+    margin-bottom: 12px;
+    text-align: center;
+}
+
 h1 {
     font-size: 20px;
     font-family: 'Rock Salt', cursive;
@@ -126,17 +132,42 @@ a {
     text-decoration: none;
 }
 
-footer .nav {
-    float:left;
-    padding-left: 0px;
+footer .footer-nav {
+
+
+
+
 }
 
-footer ul {
-    float: right;
+footer .footer-nav ul {
+
+
 }
+
+footer ul.social-terms {
+;
+
+}
+
+footer .footer-nav ul li {
+    border-top: 1px solid #BBBBBB;
+    padding: 12px 0 12px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer ul.social-terms li{
+    text-align: center;
+}
+
+
 
 .promo-box img {
     width: 100%;
+}
+
+.promo-box {
+    margin-bottom: 36px;
 }
 
 // Mobile

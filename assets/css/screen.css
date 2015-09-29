@@ -121,6 +121,13 @@ ul {
 }
 
 /* line 116, ../sass/screen.scss */
+.promo-heading {
+  font-family: 'Rock Salt';
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* line 122, ../sass/screen.scss */
 h1 {
   font-size: 20px;
   font-family: 'Rock Salt', cursive;
@@ -128,55 +135,62 @@ h1 {
   float: left;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 a {
   color: black;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
 }
 
-/* line 129, ../sass/screen.scss */
-footer .nav {
-  float: left;
-  padding-left: 0px;
+/* line 152, ../sass/screen.scss */
+footer .footer-nav ul li {
+  border-top: 1px solid #BBBBBB;
+  padding: 12px 0 12px 0;
+  text-align: center;
+  cursor: pointer;
 }
 
-/* line 134, ../sass/screen.scss */
-footer ul {
-  float: right;
+/* line 159, ../sass/screen.scss */
+footer ul.social-terms li {
+  text-align: center;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .promo-box img {
   width: 100%;
 }
 
+/* line 169, ../sass/screen.scss */
+.promo-box {
+  margin-bottom: 36px;
+}
+
 @media screen and (max-width: 480px) {
-  /* line 144, ../sass/screen.scss */
+  /* line 175, ../sass/screen.scss */
   .logo {
     width: 70px;
     margin: 10px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  /* line 153, ../sass/screen.scss */
+  /* line 184, ../sass/screen.scss */
   .logo {
     width: 170px;
   }
 
-  /* line 157, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   .promo-box {
     display: inline-block;
     width: 49%;
   }
 
-  /* line 162, ../sass/screen.scss */
+  /* line 193, ../sass/screen.scss */
   .promo-box:last-child {
     display: block;
     margin: auto;
   }
 
-  /* line 167, ../sass/screen.scss */
+  /* line 198, ../sass/screen.scss */
   ul li {
     display: inline-block;
   }
