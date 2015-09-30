@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Clothes Line</title>
+        <title>Labyrinth</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link rel="stylesheet" href="css/normalize.css"> -->
@@ -19,92 +19,81 @@
         <![endif]-->
         <header role="banner">
             <section class='clearfix top-header'>
+
                 <a class='logo-link' href="#">
                     <img class="logo" src="./images/logo.jpg" alt="clothes_line" />
                 </a>
-                <h1>Get lost in Labyrinth</h1>
-                <a class='link' href='#'>
-                    <div class='link-button'></div>
-                    <div class='link-button'></div>
-                    <div class='link-button'></div>
+
+                <h1 class='main-title'>Get lost in Labyrinth</h1>
+
+                <a class='burger-container' href='#'>
+                    <div class='burger-slice'></div>
+                    <div class='burger-slice'></div>
+                    <div class='burger-slice'></div>
                 </a>
             </section>
-            <nav id="nav" class="page-nav">
+
+            <nav class="page-nav">
                 <ul role="navigation">
-                    <li><a href="#">Home </a><span class='dash'></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
+                    <li><a class='seperator' href="#">Home </a></li>
+                    <li><a class='seperator' href="#">Page 1</a></li>
+                    <li><a class='seperator' href="#">Page 2</a></li>
+                    <li><a class='seperator' href="#">Page 3</a></li>
                 </ul>
             </nav>
         </header>
+
+
         <section class='slider'>
             <div class="container">
+                <div class='text-overlay'>These images are copyright.</div>
                 <div id="slides">
-                    <img src="./images/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
                     <img src="./images/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+                    <img src="./images/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
                     <img src="./images/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
                     <img src="./images/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
                 </div>
             </div>
         </section>
+
+
         <section class='promo-boxes'>
-            <div class='promo-box'>
-                <div class='promo-heading'>Get Dirty Weekend</div>
-                <img src='./images/promo_1.jpg'></img>
-            </div>
-            <div class='promo-box'>
-                <div class='promo-heading'>Instagram Graf Comp</div>
-                <img src='./images/promo_2.jpg'></img>
-            </div>
-            <div class='promo-box'>
-                <div class='promo-heading'>Get Lost in'ya Cap</div>
-                <img src='./images/promo_3.jpg'></img>
+            <div class='promo-boxes-container'>
+                <div class='promo-box'>
+                    <div class='promo-heading'>Get Dirty Weekend</div>
+                    <img src='./images/promo_1.jpg'></img>
+                </div>
+                <div class='promo-box'>
+                    <div class='promo-heading'>Instagram Graf Comp</div>
+                    <img src='./images/promo_2.jpg'></img>
+                </div>
+                <div class='promo-box'>
+                    <div class='promo-heading'>Get Lost in'ya Cap</div>
+                    <img src='./images/promo_3.jpg'></img>
+                </div>
             </div>
         </section>
-        <footer>
-            <nav id="nav" class="footer-nav">
-                <ul role="navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
+
+        <footer class="main-footer">
+            <nav class="footer-nav">
+                <ul class="footer-page-links" role="navigation">
+                    <li><a class='seperator' href="#">Home</a></li>
+                    <li><a class='seperator' href="#">Page 1</a></li>
+                    <li><a class='seperator' href="#">Page 2</a></li>
+                    <li><a class='seperator' href="#">Page 3</a></li>
                 </ul>
                 <ul class='social-terms' role="navigation">
-                    <li><a href="#">Copyright</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
+                    <li><a class='seperator' href="#">Copyright</a></li>
+                    <li><a class='seperator' href="#">Facebook</a></li>
+                    <li><a class='seperator' href="#">Twitter</a></li>
                 </ul>
             </nav>
 
         </footer>
+
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="./lib/jquery.slides.min.js"></script>
-        <script>
-        $(function() {
-            $('#slides').slidesjs({
-                width: 940,
-                height: 440,
-                pagination: {
-                    active: false
-                },
-                navigation: {
-                    active: false
-                }
-            });
-        });
-
-
-
-
-        </script>
-
-        <script type="text/javascript">
-            $('.link').on('click', function () {
-                $('.page-nav').toggle()
-            })
-
-        </script>
+        <script src='./assets/js/main.js'></script>
 
     </body>
 </html>
