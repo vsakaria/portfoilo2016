@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "proxima";
+  src: url(http://cdn.supadupa.me/shop/17527/assets/fonts/proxima-nova/proximanova-regular-webfont.woff);
+}
+@font-face {
+  font-family: "ticky";
+  src: url(https://app.ttcdn.co/fonts/TictailSans-Regular.woff);
+}
+@font-face {
+  font-family: "ticky-bold";
+  src: url(https://app.ttcdn.co/fonts/TictailSans-Bold.woff);
+}
 /* line 1, ../sass/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -55,12 +67,12 @@ table {
   border-spacing: 0;
 }
 
-/* line 3, ../sass/main.scss */
+/* line 4, ../sass/main.scss */
 body {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'ticky', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-/* line 7, ../sass/main.scss */
+/* line 8, ../sass/main.scss */
 .header-container {
   color: #eee;
   background: #2b2726;
@@ -69,15 +81,16 @@ body {
   overflow: auto;
   padding: 19px;
 }
-/* line 15, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 .header-container h3 {
   float: left;
 }
-/* line 19, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 .header-container .burger-container {
   float: right;
+  cursor: pointer;
 }
-/* line 23, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 .header-container .burger-container .burger-line {
   width: 28px;
   height: 2px;
@@ -86,25 +99,26 @@ body {
   margin-bottom: 4px;
 }
 
-/* line 33, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 .nav-container {
   display: none;
   padding-top: 24px;
   text-align: center;
 }
-/* line 38, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 .nav-container h3 {
   margin-bottom: 10px;
 }
-/* line 42, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 .nav-container a {
   color: black;
+  font-size: 24px;
   padding: 12px;
   text-decoration: none;
   line-height: 2.5;
   display: block;
 }
-/* line 50, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 .nav-container a:hover {
   background-color: pink;
 }
