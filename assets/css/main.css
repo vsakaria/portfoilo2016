@@ -56,29 +56,55 @@ table {
 }
 
 /* line 3, ../sass/main.scss */
-header {
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* line 7, ../sass/main.scss */
+.header-container {
   color: #eee;
   background: #2b2726;
   padding-bottom: 1em;
   text-align: center;
+  overflow: auto;
+  padding: 19px;
+}
+/* line 15, ../sass/main.scss */
+.header-container h3 {
+  float: left;
+}
+/* line 19, ../sass/main.scss */
+.header-container .burger-container {
+  float: right;
+}
+/* line 23, ../sass/main.scss */
+.header-container .burger-container .burger-line {
+  width: 28px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: white;
+  margin-bottom: 4px;
 }
 
-/* line 10, ../sass/main.scss */
-.nav {
+/* line 33, ../sass/main.scss */
+.nav-container {
   display: none;
+  padding-top: 24px;
+  text-align: center;
 }
-/* line 14, ../sass/main.scss */
-.nav li {
-  display: inline;
+/* line 38, ../sass/main.scss */
+.nav-container h3 {
+  margin-bottom: 10px;
 }
-/* line 18, ../sass/main.scss */
-.nav a {
-  color: #fff;
-  padding: 0.75em;
+/* line 42, ../sass/main.scss */
+.nav-container a {
+  color: black;
+  padding: 12px;
   text-decoration: none;
   line-height: 2.5;
+  display: block;
 }
-/* line 25, ../sass/main.scss */
-.nav a:hover {
-  text-decoration: underline;
+/* line 50, ../sass/main.scss */
+.nav-container a:hover {
+  background-color: pink;
 }
