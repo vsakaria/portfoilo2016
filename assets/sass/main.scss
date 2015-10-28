@@ -1,0 +1,28 @@
+@import 'base/reset';
+
+header {
+    color: #eee;
+    background: #2b2726;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.nav {
+
+    display: none;
+
+    li {
+        display: inline;
+    }
+
+    a {
+        color: #fff;
+        padding: 0.75em;
+        text-decoration: none;
+        line-height: 2.5;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
