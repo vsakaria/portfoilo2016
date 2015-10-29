@@ -1,6 +1,22 @@
-$primary-color: #996600;
-$secondary-color: #9DC8E0;
+$base-background-color: #8ae069;
+
+$primary-text-colour: black;
+$secondary-text-colour: black;
+
+$primary-background-colour: green;
+$secondary-background-colour: white;
+
 
 $default-margin: 25px;
 
-$primary-section: #525252;
+.base-colour {
+    background-color: $base-background-color;
+}
+
+.skew-right {
+    transform: skewY(-10deg);
+}
+
+.skew-left {
+    transform: skewY(10deg);
+}

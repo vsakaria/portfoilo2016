@@ -3,8 +3,12 @@
 @import 'base/theme';
 
 
+// html {
+//     height: 100%;
+// }
 
 body {
+
     font-family: 'ticky', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
@@ -18,7 +22,7 @@ body {
 
     .header-title {
         display: none;
-        color: $primary-color;
+        color: $primary-background-colour;
         float: left;
         font-size: 22px;
         line-height: 10px;
@@ -58,14 +62,14 @@ body {
     }
 
     a:hover {
-        background-color: $secondary-color;
+        background-color: $secondary-background-colour;
     }
 }
 
 .home {
 
     height: 100vh;
-    background-color: $primary-section;
+    background-color: $primary-background-colour;
     padding: 20px;
 
     h1 {
@@ -74,7 +78,7 @@ body {
 
     header {
         font-size: 56px;
-        color: $primary-color;
+        color: $primary-text-colour;
     }
 
     .home-container {
@@ -84,7 +88,7 @@ body {
         ul li {
             line-height: 40px;
             font-size: 40px;
-            color: $secondary-color;
+            color: $secondary-text-colour;
         }
     }
 }
