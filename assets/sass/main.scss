@@ -1,5 +1,8 @@
 @import 'base/typography';
 @import 'base/reset';
+@import 'base/theme';
+
+
 
 body {
     font-family: 'ticky', 'Helvetica Neue', Helvetica, sans-serif;
@@ -13,8 +16,12 @@ body {
     overflow: auto;
     padding: 19px;
 
-    h3 {
+    .header-title {
+        display: none;
+        color: $primary-color;
         float: left;
+        font-size: 22px;
+        line-height: 10px;
     }
 
     .burger-container {
@@ -51,6 +58,33 @@ body {
     }
 
     a:hover {
-        background-color: pink;
+        background-color: $secondary-color;
+    }
+}
+
+.home {
+
+    height: 100vh;
+    background-color: $primary-section;
+    padding: 20px;
+
+    h1 {
+        margin-bottom: $default-margin;
+    }
+
+    header {
+        font-size: 56px;
+        color: $primary-color;
+    }
+
+    .home-container {
+
+        margin-bottom: $default-margin;
+
+        ul li {
+            line-height: 40px;
+            font-size: 40px;
+            color: $secondary-color;
+        }
     }
 }
