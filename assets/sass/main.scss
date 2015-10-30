@@ -8,24 +8,27 @@
 // }
 
 body {
-
-    font-family: 'ticky', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: $reading-font;
 }
 
+.main-container {
+    background-color: $base-background-color;
+}
+
+
 .header-container {
-    color: #eee;
-    background: #2b2726;
-    padding-bottom: 1em;
+    background: $primary-background-color;
     text-align: center;
     overflow: auto;
-    padding: 19px;
+    padding: 41px 41px 25px;
+
 
     .header-title {
-        display: none;
-        color: $primary-background-colour;
+        color: $primary-foreground-color;
         float: left;
-        font-size: 22px;
-        line-height: 10px;
+        font-size: 42px;
+        line-height: 24px;
+        font-family: $title-font;
     }
 
     .burger-container {
@@ -34,11 +37,11 @@ body {
         // margin: 19px 19px 0 0;
 
         .burger-line {
-            width: 28px;
-            height: 2px;
+            width: 45px;
+            height: 4px;
             border-radius: 2px;
-            background-color: white;
-            margin-bottom: 4px;
+            background-color: $primary-foreground-color;
+            margin-bottom: 6px;
         }
     }
 }
@@ -66,10 +69,18 @@ body {
     }
 }
 
-.home {
+.nav-location {
+    background-color: #669999;
+    height: 30px;
+    border-bottom: 1px solid $primary-foreground-color;
+    font-family: $reading-font;
+    padding: 13px 37px 0px 39px;
 
+}
+
+
+.home {
     height: 100vh;
-    background-color: $primary-background-colour;
     padding: 20px;
 
     h1 {
@@ -88,7 +99,23 @@ body {
         ul li {
             line-height: 40px;
             font-size: 40px;
-            color: $secondary-text-colour;
+            color: $base-foreground-color;
         }
     }
+}
+
+.coding {
+    font-family: 'Courier New';
+}
+
+.commerce {
+    font-family: 'Playfair Display SC', serif;
+}
+
+.creativity {
+    font-family: 'creative', cursive;
+}
+
+.communcation {
+    font-family: 'communcation'
 }
