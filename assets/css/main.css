@@ -8,11 +8,15 @@
 }
 @font-face {
   font-family: "communcation";
-  src: url(../fonts/proximanova.woff);
+  src: url(../fonts/communication/Code_Pro_Light_Demo-webfont.woff);
 }
 @font-face {
   font-family: "creative";
   src: url(../fonts/creativity/BPdots.otf);
+}
+@font-face {
+  font-family: "curosity";
+  src: url(../fonts/Note_this.ttf);
 }
 /* line 1, ../sass/base/_reset.scss */
 html, body, div, span, applet, object, iframe,
@@ -142,48 +146,65 @@ body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   padding: 13px 37px 0px 39px;
 }
+/* line 79, ../sass/main.scss */
+.nav-location header {
+  font-size: 18px;
+  text-shadow: 2px 2px black;
+  color: #F3C363;
+}
 
-/* line 82, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .home {
   height: 100vh;
-  padding: 20px;
+  text-align: center;
+  padding-top: 30px;
 }
-/* line 86, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .home h1 {
   margin-bottom: 25px;
 }
-/* line 90, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .home header {
   font-size: 56px;
   color: black;
 }
-/* line 95, ../sass/main.scss */
+/* line 101, ../sass/main.scss */
 .home .home-container {
   margin-bottom: 25px;
 }
-/* line 99, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 .home .home-container ul li {
   line-height: 40px;
   font-size: 40px;
+  margin-bottom: 30px;
   color: #ffffff;
 }
-
-/* line 107, ../sass/main.scss */
-.coding {
+/* line 112, ../sass/main.scss */
+.home .home-container .coding {
+  font-size: 49px;
   font-family: 'Courier New';
 }
-
-/* line 111, ../sass/main.scss */
-.commerce {
+/* line 117, ../sass/main.scss */
+.home .home-container .commerce {
   font-family: 'Playfair Display SC', serif;
 }
-
-/* line 115, ../sass/main.scss */
-.creativity {
+/* line 121, ../sass/main.scss */
+.home .home-container .creativity {
   font-family: 'creative', cursive;
 }
-
-/* line 119, ../sass/main.scss */
-.communcation {
+/* line 125, ../sass/main.scss */
+.home .home-container .communcation {
   font-family: "communcation";
+}
+/* line 129, ../sass/main.scss */
+.home .home-container .curiosity {
+  font-family: "curosity";
+}
+
+/* line 135, ../sass/main.scss */
+.sub-charactistics {
+  color: #F3C363;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
 }

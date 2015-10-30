@@ -76,12 +76,18 @@ body {
     font-family: $reading-font;
     padding: 13px 37px 0px 39px;
 
-}
+    header {
+        font-size: 18px;
+        text-shadow: 2px 2px black;
+        color: #F3C363;
+    }
 
+}
 
 .home {
     height: 100vh;
-    padding: 20px;
+    text-align: center;
+    padding-top: 30px;
 
     h1 {
         margin-bottom: $default-margin;
@@ -99,23 +105,37 @@ body {
         ul li {
             line-height: 40px;
             font-size: 40px;
+            margin-bottom: 30px;
             color: $base-foreground-color;
+        }
+
+        .coding {
+            font-size: 49px;
+            font-family: 'Courier New';
+        }
+
+        .commerce {
+            font-family: 'Playfair Display SC', serif;
+        }
+
+        .creativity {
+            font-family: 'creative', cursive;
+        }
+
+        .communcation {
+            font-family: 'communcation'
+        }
+
+        .curiosity {
+            font-family: 'curosity'
         }
     }
 }
 
-.coding {
-    font-family: 'Courier New';
-}
+.sub-charactistics {
+    color: #F3C363;
+    font-family: $reading-font;
+    font-size: 13px;
+    line-height: 16px;
 
-.commerce {
-    font-family: 'Playfair Display SC', serif;
-}
-
-.creativity {
-    font-family: 'creative', cursive;
-}
-
-.communcation {
-    font-family: 'communcation'
 }
