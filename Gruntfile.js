@@ -2,30 +2,24 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
 
-        // Package
         pkg: grunt.file.readJSON('package.json'),
 
-        // Compass
         compass: {
             build: {
                 options: {
-                    sassDir: 'assets/sass',
-                    cssDir: 'assets/css'
+                    sassDir: 'app/assets/sass',
+                    cssDir: 'app/assets/css'
                 }
             }
         },
-
-        // Clean
         clean: {
-            pre: ['assets/css'],
+            pre: ['app/assets/css'],
             post: ['.sass-cache']
         },
-
-        // Watch
         watch: {
             sass: {
-                files: ['assets/sass/**/*.{sass,scss}', 'assets/sass/*.{sass,scss}'],
-                tasks: ['default']
+                files: ['app/assets/sass/**/*.{sass,scss}', 'app/assets/sass/*.{sass,scss}'],
+                tasks: ['compass']
             },
             options: {
                 livereload: true
@@ -33,15 +27,19 @@ module.exports = function(grunt) {
             another: {
                 files: ['js/*.js', '*.html']
             }
+        },
+        open : {
+            dev : {
+                path: '//Users/vishalsakaria/Code/portfoilo16/index.html',
+                app: 'Google Chrome'
+            }
         }
     });
 
-    // Load NPM Tasks
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-open');
 
-    // Register Grunt tasks
-    grunt.registerTask('default', ['clean:pre', 'compass', 'clean:post']);
-
+    grunt.registerTask('dev', ['clean:pre', 'compass', 'open', 'watch', 'clean:post']);
 };
