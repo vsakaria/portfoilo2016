@@ -21,16 +21,18 @@ module.exports = function(grunt) {
                 files: ['app/assets/sass/**/*.{sass,scss}', 'app/assets/sass/*.{sass,scss}'],
                 tasks: ['compass']
             },
-            options: {
-                livereload: true
-            },
-            another: {
-                files: ['js/*.js', '*.html']
+            livereload: {
+                options: {
+                    livereload: true
+                },
+                files: ['app/assets/css/*.css']
             }
+            // another: {
+            // //     files: ['js/*.js', '*.html']
         },
         open : {
             dev : {
-                path: '//Users/vishalsakaria/Code/portfoilo16/index.html',
+                path: 'index.html',
                 app: 'Google Chrome'
             }
         }
