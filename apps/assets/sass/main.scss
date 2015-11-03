@@ -1,0 +1,260 @@
+@import 'base/typography';
+@import 'base/reset';
+@import 'base/theme';
+
+
+// html {
+//     height: 100%;
+// }
+
+body {
+    font-family: $reading-font;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-container {
+    background-color: $base-background-color;
+}
+
+
+.header-container {
+    background: $primary-background-color;
+    overflow: auto;
+    padding: 41px 22px 25px;
+    position: relative;
+    z-index: 1;
+
+    .header-title {
+        color: $primary-foreground-color;
+        float: left;
+        font-size: 42px;
+        line-height: 24px;
+        font-family: $title-font;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .burger-container {
+        cursor: pointer;
+        position: relative;
+        right: 0;
+
+        .burger-line {
+            width: 38px;
+            height: 3px;
+            border-radius: 2px;
+            background-color: $primary-foreground-color;
+            display: block;
+            position: absolute;
+            opacity: 1;
+            right: 0;
+
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+        }
+    }
+}
+
+
+.burger-line:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.burger-line:nth-child(2) {
+  top: 10px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.burger-line:nth-child(3) {
+  top: 20px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.burger-line.open:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -2px;
+  right: 0px;
+}
+
+.burger-line.open:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger-line.open:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 25px;
+  right: 0px;
+}
+
+.nav-container {
+    position: absolute;
+    top: -100vh;
+    padding-top: 24px;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    font-family: $title-font;
+    background-color: $secondary-background-color;
+    -webkit-font-smoothing: antialiased;
+    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+
+    li {
+        border-bottom: 1px solid #617d7d;
+    }
+
+    a {
+        color: black;
+        font-size: 36px;
+        padding: 12px;
+        text-decoration: none;
+        line-height: 1.65;
+        display: block;
+    }
+
+    a:hover {
+        background-color: $primary-background-color;
+    }
+}
+
+.animate-nav {
+    top: 96px;
+}
+
+
+.nav-location {
+    background-color: $secondary-background-color;
+    height: 30px;
+    border-bottom: 1px solid $primary-foreground-color;
+    font-family: $title-font;
+    padding: 13px 37px 0px 39px;
+
+    header {
+        transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        -webkit-font-smoothing: antialiased;
+        color: white;
+        position: relative;
+        top: 0;
+
+        &.animate-location-title {
+            top: -40px;
+        }
+    }
+}
+
+.home {
+    height: 100vh;
+    text-align: center;
+    padding-top: 30px;
+
+    h1 {
+        margin-bottom: $default-margin;
+    }
+
+    header {
+        font-size: 56px;
+        color: $primary-text-color;
+    }
+
+    .home-container {
+
+        margin-bottom: $default-margin;
+
+        ul li {
+            line-height: 40px;
+            font-size: 40px;
+            margin-bottom: 30px;
+            color: $base-foreground-color;
+        }
+
+        .coding {
+            font-size: 49px;
+            font-family: 'Courier New';
+        }
+
+        .commerce {
+            font-family: 'Playfair Display SC', serif;
+        }
+
+        .creativity {
+            font-family: 'creative', cursive;
+        }
+
+        .communcation {
+            font-size: 32px;
+            font-family: 'communcation'
+        }
+
+        .curiosity {
+            font-size: 46px;
+            font-family: 'curosity'
+        }
+    }
+}
+
+.sub-charactistics {
+    color: #F3C363;
+    -webkit-font-smoothing: antialiased;
+    font-family: $reading-font;
+    font-size: 13px;
+    line-height: 16px;
+}
