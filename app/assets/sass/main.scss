@@ -6,6 +6,12 @@ body {
     font-family: $reading-font;
 }
 
+
+.skills, .blog, .examples-contact {
+    display: none;
+}
+
+
 main {
     background-color: $base-background-color;
     height: 100vh;
@@ -161,7 +167,15 @@ main {
     }
 }
 
-.home {
+.reading-text {
+    color: #F3C363;
+    -webkit-font-smoothing: antialiased;
+    font-family: $reading-font;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.about-me {
     text-align: center;
     padding-top: 30px;
 
@@ -176,11 +190,7 @@ main {
             color: $base-foreground-color;
 
             .sub-charactistics {
-                color: #F3C363;
-                -webkit-font-smoothing: antialiased;
-                font-family: $reading-font;
-                font-size: 13px;
-                line-height: 16px;
+                @extend .reading-text
             }
         }
 
@@ -212,12 +222,16 @@ main {
 .examples-contact, .skills {
     padding: 64px;
 
+    p {
+        @extend .reading-text
+    }
+
     li {
-        font-size: 63px;
+        font-size: 34px;
         color: #F3C363;
         font-family: $title-font;
         -webkit-font-smoothing: antialiased;
-        line-height: 80px;
+        line-height: 43px;
     }
 }
 
