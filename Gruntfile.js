@@ -35,6 +35,17 @@ module.exports = function(grunt) {
                 path: 'index.html',
                 app: 'Google Chrome'
             }
+        },
+        cssmin: {
+            options: {
+                shorthandCompacting: false,
+                roundingPrecision: -1
+            },
+            target: {
+                files: {
+                    'output.css': ['app/assets/css/main.css']
+                }
+            }
         }
     });
 
@@ -43,5 +54,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-open');
 
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+
     grunt.registerTask('dev', ['clean:pre', 'compass', 'open', 'watch', 'clean:post']);
+    grunt.registerTask('prod', ['cssmin']);
 };
