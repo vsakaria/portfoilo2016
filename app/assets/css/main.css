@@ -81,7 +81,7 @@ body {
 }
 
 /* line 10, ../sass/main.scss */
-.skills, .blog, .examples-contact {
+.skills, .blog, .examples-contact, .portfolio {
   display: none;
 }
 
@@ -326,11 +326,11 @@ main {
 }
 
 /* line 263, ../sass/main.scss */
-.examples-contact ul li {
+.examples-contact, .portfolio ul li {
   font-size: 36px;
 }
 /* line 266, ../sass/main.scss */
-.examples-contact ul li a {
+.examples-contact a, .portfolio ul li a {
   text-decoration: none;
   font-size: 33px;
   color: #F3C363;

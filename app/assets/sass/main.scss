@@ -7,7 +7,7 @@ body {
 }
 
 
-.skills, .blog, .examples-contact {
+.skills, .blog, .examples-contact, .portfolio{
     display: none;
 }
 
@@ -260,7 +260,7 @@ main {
     }
 }
 
-.examples-contact ul li{
+.examples-contact, .portfolio ul li{
     font-size: 36px;
 
     a {
