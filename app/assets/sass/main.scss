@@ -56,36 +56,38 @@ main {
             @include transition(.25s, ease-in-out)
         }
 
-        .burger-line:nth-child(1) {
-            top: 0px;
+        .burger-line {
             @include transformOrigin(left, center);
+
+            &:nth-child(1) {
+                top: 0px;
+            }
+            &:nth-child(2) {
+                top: 10px;
+            }
+
+            &:nth-child(3) {
+                top: 20px;
+            }
         }
 
-        .burger-line:nth-child(2) {
-            top: 10px;
-            @include transformOrigin(left, center);
-        }
+        .burger-line.open {
+            &:nth-child(1) {
+                @include transformRotate(45deg);
+                top: -2px;
+                right: 0px;
+            }
 
-        .burger-line:nth-child(3) {
-            top: 20px;
-            @include transformOrigin(left, center);
-        }
+            &:nth-child(2) {
+                width: 0%;
+                opacity: 0;
+            }
 
-        .burger-line.open:nth-child(1) {
-            @include transformRotate(45deg);
-            top: -2px;
-            right: 0px;
-        }
-
-        .burger-line.open:nth-child(2) {
-            width: 0%;
-            opacity: 0;
-        }
-
-        .burger-line.open:nth-child(3) {
-            @include transformRotate(-45deg);
-            top: 25px;
-            right: 0px;
+            &:nth-child(3) {
+                @include transformRotate(-45deg);
+                top: 25px;
+                right: 0px;
+            }
         }
     }
 }
