@@ -1,16 +1,15 @@
 @import 'base/typography';
 @import 'base/reset';
 @import 'base/theme';
+@import 'utils/animation_mixins';
 
-body {
-    font-family: $reading-font;
-}
-
-
-.skills, .blog, .examples-contact, .portfolio{
+.main-container {
     display: none;
-}
 
+    &.about-me {
+        display: block;
+    }
+}
 
 main {
     background-color: $base-background-color;
@@ -25,6 +24,8 @@ main {
     position: relative;
     z-index: 1;
 
+
+    //I have one element float left and one positioned L39 is this ok?
     .header-title {
         color: $primary-foreground-color;
         float: left;
@@ -51,45 +52,27 @@ main {
             opacity: 1;
             right: 0;
 
-            -webkit-transform: rotate(0deg);
-            -moz-transform: rotate(0deg);
-            -o-transform: rotate(0deg);
-            transform: rotate(0deg);
-            -webkit-transition: .25s ease-in-out;
-            -moz-transition: .25s ease-in-out;
-            -o-transition: .25s ease-in-out;
-            transition: .25s ease-in-out;
+            @include transformRotate(0deg);
+            @include transition(.25s, ease-in-out)
         }
 
         .burger-line:nth-child(1) {
             top: 0px;
-            -webkit-transform-origin: left center;
-            -moz-transform-origin: left center;
-            -o-transform-origin: left center;
-            transform-origin: left center;
+            @include transformOrigin(left, center);
         }
 
         .burger-line:nth-child(2) {
             top: 10px;
-            -webkit-transform-origin: left center;
-            -moz-transform-origin: left center;
-            -o-transform-origin: left center;
-            transform-origin: left center;
+            @include transformOrigin(left, center);
         }
 
         .burger-line:nth-child(3) {
             top: 20px;
-            -webkit-transform-origin: left center;
-            -moz-transform-origin: left center;
-            -o-transform-origin: left center;
-            transform-origin: left center;
+            @include transformOrigin(left, center);
         }
 
         .burger-line.open:nth-child(1) {
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            transform: rotate(45deg);
+            @include transformRotate(45deg);
             top: -2px;
             right: 0px;
         }
@@ -100,10 +83,7 @@ main {
         }
 
         .burger-line.open:nth-child(3) {
-            -webkit-transform: rotate(-45deg);
-            -moz-transform: rotate(-45deg);
-            -o-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+            @include transformRotate(-45deg);
             top: 25px;
             right: 0px;
         }

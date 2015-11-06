@@ -75,24 +75,23 @@ table {
   border-spacing: 0;
 }
 
-/* line 5, ../sass/main.scss */
-body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-}
-
-/* line 10, ../sass/main.scss */
-.skills, .blog, .examples-contact, .portfolio {
+/* line 6, ../sass/main.scss */
+.main-container {
   display: none;
 }
+/* line 9, ../sass/main.scss */
+.main-container.about-me {
+  display: block;
+}
 
-/* line 15, ../sass/main.scss */
+/* line 14, ../sass/main.scss */
 main {
   background-color: #252F38;
   height: 100vh;
   text-align: center;
 }
 
-/* line 21, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 .header-container {
   background: #F3C363;
   overflow: auto;
@@ -100,7 +99,7 @@ main {
   position: relative;
   z-index: 1;
 }
-/* line 28, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 .header-container .header-title {
   color: #333333;
   float: left;
@@ -109,7 +108,7 @@ main {
   font-family: "innerhero", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-/* line 37, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 .header-container .burger-container {
   cursor: pointer;
   position: absolute;
@@ -117,7 +116,7 @@ main {
   height: 34px;
   width: 38px;
 }
-/* line 44, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 .header-container .burger-container .burger-line {
   width: 38px;
   height: 3px;
@@ -131,12 +130,12 @@ main {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
-/* line 64, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .header-container .burger-container .burger-line:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
@@ -144,7 +143,7 @@ main {
   -o-transform-origin: left center;
   transform-origin: left center;
 }
-/* line 72, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .header-container .burger-container .burger-line:nth-child(2) {
   top: 10px;
   -webkit-transform-origin: left center;
@@ -152,7 +151,7 @@ main {
   -o-transform-origin: left center;
   transform-origin: left center;
 }
-/* line 80, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .header-container .burger-container .burger-line:nth-child(3) {
   top: 20px;
   -webkit-transform-origin: left center;
@@ -160,7 +159,7 @@ main {
   -o-transform-origin: left center;
   transform-origin: left center;
 }
-/* line 88, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .header-container .burger-container .burger-line.open:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -169,12 +168,12 @@ main {
   top: -2px;
   right: 0px;
 }
-/* line 97, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 .header-container .burger-container .burger-line.open:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
-/* line 102, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 .header-container .burger-container .burger-line.open:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -184,7 +183,7 @@ main {
   right: 0px;
 }
 
-/* line 113, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .nav-container {
   position: absolute;
   top: -100vh;
@@ -197,11 +196,11 @@ main {
   -webkit-font-smoothing: antialiased;
   transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
-/* line 125, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 .nav-container li {
   border-bottom: 1px solid #617d7d;
 }
-/* line 129, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 .nav-container a {
   color: black;
   font-size: 36px;
@@ -210,17 +209,17 @@ main {
   line-height: 1.65;
   display: block;
 }
-/* line 138, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .nav-container a:hover {
   background-color: #F3C363;
 }
 
-/* line 143, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 .animate-nav {
   top: 96px;
 }
 
-/* line 148, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .nav-location {
   background-color: #669999;
   height: 30px;
@@ -228,7 +227,7 @@ main {
   font-family: "innerhero", "Helvetica Neue", Helvetica, sans-serif;
   padding: 13px 37px 0px 39px;
 }
-/* line 155, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .nav-location header {
   transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   letter-spacing: 1.5px;
@@ -238,12 +237,12 @@ main {
   position: relative;
   top: 0;
 }
-/* line 164, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 .nav-location header.animate-location-title {
   top: -40px;
 }
 
-/* line 170, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 .reading-text, .about-me .home-container ul li .sub-charactistics, .examples-contact p, .skills p {
   color: #F3C363;
   -webkit-font-smoothing: antialiased;
@@ -252,12 +251,12 @@ main {
   line-height: 16px;
 }
 
-/* line 178, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 .main-container {
   padding: 30px 20px;
   text-align: center;
 }
-/* line 182, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 .main-container header {
   color: #F3C363;
   -webkit-font-smoothing: antialiased;
@@ -267,42 +266,42 @@ main {
   margin-bottom: 31px;
 }
 
-/* line 193, ../sass/main.scss */
+/* line 173, ../sass/main.scss */
 .about-me .home-container {
   margin-bottom: 25px;
 }
-/* line 197, ../sass/main.scss */
+/* line 177, ../sass/main.scss */
 .about-me .home-container ul li {
   line-height: 40px;
   font-size: 40px;
   margin-bottom: 30px;
   color: #ffffff;
 }
-/* line 208, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 .about-me .home-container .coding {
   font-size: 49px;
   font-family: 'Courier New';
 }
-/* line 213, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .about-me .home-container .commerce {
   font-family: 'Playfair Display SC', serif;
 }
-/* line 217, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 .about-me .home-container .creativity {
   font-family: 'creative', cursive;
 }
-/* line 221, ../sass/main.scss */
+/* line 201, ../sass/main.scss */
 .about-me .home-container .communcation {
   font-size: 32px;
   font-family: "communcation";
 }
-/* line 226, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .about-me .home-container .curiosity {
   font-size: 46px;
   font-family: "curosity";
 }
 
-/* line 234, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 .blog p {
   font-size: 33px;
   color: #F3C363;
@@ -311,12 +310,12 @@ main {
   line-height: 43px;
   margin-top: 105px;
 }
-/* line 242, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 .blog p a {
   color: #669999;
 }
 
-/* line 254, ../sass/main.scss */
+/* line 234, ../sass/main.scss */
 .examples-contact li, .skills li {
   font-size: 33px;
   color: #F3C363;
@@ -325,11 +324,11 @@ main {
   line-height: 43px;
 }
 
-/* line 263, ../sass/main.scss */
+/* line 243, ../sass/main.scss */
 .examples-contact, .portfolio ul li {
   font-size: 36px;
 }
-/* line 266, ../sass/main.scss */
+/* line 246, ../sass/main.scss */
 .examples-contact a, .portfolio ul li a {
   text-decoration: none;
   font-size: 33px;
