@@ -189,13 +189,16 @@ main {
   font-family: "innerhero", "Helvetica Neue", Helvetica, sans-serif;
   background-color: #669999;
   -webkit-font-smoothing: antialiased;
+  -webkit-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  -moz-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  -o-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
-/* line 107, ../sass/main.scss */
+/* line 108, ../sass/main.scss */
 .nav-container li {
   border-bottom: 1px solid #617d7d;
 }
-/* line 111, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 .nav-container a {
   color: black;
   font-size: 36px;
@@ -204,17 +207,16 @@ main {
   line-height: 1.65;
   display: block;
 }
-/* line 120, ../sass/main.scss */
+/* line 121, ../sass/main.scss */
 .nav-container a:hover {
   background-color: #F3C363;
 }
-
 /* line 125, ../sass/main.scss */
-.animate-nav {
+.nav-container.animate-nav {
   top: 96px;
 }
 
-/* line 130, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .nav-location {
   background-color: #669999;
   height: 30px;
@@ -222,8 +224,11 @@ main {
   font-family: "innerhero", "Helvetica Neue", Helvetica, sans-serif;
   padding: 13px 37px 0px 39px;
 }
-/* line 137, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .nav-location header {
+  -webkit-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  -moz-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  -o-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   letter-spacing: 1.5px;
   font-size: 22px;
@@ -232,26 +237,17 @@ main {
   position: relative;
   top: 0;
 }
-/* line 146, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 .nav-location header.animate-location-title {
   top: -40px;
 }
 
-/* line 152, ../sass/main.scss */
-.reading-text, .about-me .home-container ul li .sub-charactistics, .examples-contact p, .skills p {
-  color: #F3C363;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 16px;
-}
-
-/* line 160, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 .main-container {
   padding: 30px 20px;
   text-align: center;
 }
-/* line 164, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 .main-container header {
   color: #F3C363;
   -webkit-font-smoothing: antialiased;
@@ -261,74 +257,69 @@ main {
   margin-bottom: 31px;
 }
 
-/* line 175, ../sass/main.scss */
-.about-me .home-container {
+/* line 168, ../sass/main.scss */
+.about-me {
   margin-bottom: 25px;
 }
-/* line 179, ../sass/main.scss */
-.about-me .home-container ul li {
+/* line 171, ../sass/main.scss */
+.about-me ul li {
   line-height: 40px;
   font-size: 40px;
   margin-bottom: 30px;
   color: #ffffff;
 }
-/* line 190, ../sass/main.scss */
-.about-me .home-container .coding {
+/* line 177, ../sass/main.scss */
+.about-me ul li .sub-charactistics {
+  color: #F3C363;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+}
+/* line 186, ../sass/main.scss */
+.about-me .coding {
   font-size: 49px;
   font-family: 'Courier New';
 }
-/* line 195, ../sass/main.scss */
-.about-me .home-container .commerce {
+/* line 191, ../sass/main.scss */
+.about-me .commerce {
   font-family: 'Playfair Display SC', serif;
 }
-/* line 199, ../sass/main.scss */
-.about-me .home-container .creativity {
+/* line 195, ../sass/main.scss */
+.about-me .creativity {
   font-family: 'creative', cursive;
 }
-/* line 203, ../sass/main.scss */
-.about-me .home-container .communcation {
+/* line 199, ../sass/main.scss */
+.about-me .communcation {
   font-size: 32px;
   font-family: "communcation";
 }
-/* line 208, ../sass/main.scss */
-.about-me .home-container .curiosity {
+/* line 204, ../sass/main.scss */
+.about-me .curiosity {
   font-size: 46px;
   font-family: "curosity";
 }
 
-/* line 216, ../sass/main.scss */
-.blog p {
+/* line 210, ../sass/main.scss */
+.main-container-text, .blog p, .skills li, .cv-contact a, .portfolio a {
   font-size: 33px;
   color: #F3C363;
   font-family: "innerhero", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 43px;
+}
+
+/* line 219, ../sass/main.scss */
+.blog p {
   margin-top: 105px;
 }
-/* line 224, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 .blog p a {
   color: #669999;
 }
 
 /* line 236, ../sass/main.scss */
-.examples-contact li, .skills li {
-  font-size: 33px;
-  color: #F3C363;
-  font-family: "innerhero", "Helvetica Neue", Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  line-height: 43px;
-}
-
-/* line 245, ../sass/main.scss */
-.examples-contact, .portfolio ul li {
-  font-size: 36px;
-}
-/* line 248, ../sass/main.scss */
-.examples-contact a, .portfolio ul li a {
-  text-decoration: none;
-  font-size: 33px;
-  color: #F3C363;
-  font-family: "innerhero", "Helvetica Neue", Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
+.cv-contact a, .portfolio a {
   line-height: 65px;
+  text-decoration: none;
 }

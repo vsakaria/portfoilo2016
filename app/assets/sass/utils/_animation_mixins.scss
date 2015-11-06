@@ -12,9 +12,9 @@
     transform-origin: $point1 $point2;
 }
 
-@mixin transition($time, $effect) {
-    -webkit-transition: $time $effect;
-    -moz-transition: $time $effect;
-    -o-transition: $time $effect;
-    transition: $time $effect;
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
 }
