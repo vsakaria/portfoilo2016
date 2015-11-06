@@ -232,7 +232,7 @@ main {
 .nav-location header {
   transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   letter-spacing: 1.5px;
-  font-size: 20px;
+  font-size: 22px;
   -webkit-font-smoothing: antialiased;
   color: white;
   position: relative;
@@ -253,65 +253,88 @@ main {
 }
 
 /* line 178, ../sass/main.scss */
-.about-me {
+.main-container {
+  padding: 30px 20px;
   text-align: center;
-  padding-top: 30px;
 }
 /* line 182, ../sass/main.scss */
+.main-container header {
+  color: #F3C363;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+
+/* line 193, ../sass/main.scss */
 .about-me .home-container {
   margin-bottom: 25px;
 }
-/* line 186, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 .about-me .home-container ul li {
   line-height: 40px;
   font-size: 40px;
   margin-bottom: 30px;
   color: #ffffff;
 }
-/* line 197, ../sass/main.scss */
+/* line 208, ../sass/main.scss */
 .about-me .home-container .coding {
   font-size: 49px;
   font-family: 'Courier New';
 }
-/* line 202, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
 .about-me .home-container .commerce {
   font-family: 'Playfair Display SC', serif;
 }
-/* line 206, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 .about-me .home-container .creativity {
   font-family: 'creative', cursive;
 }
-/* line 210, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 .about-me .home-container .communcation {
   font-size: 32px;
   font-family: "communcation";
 }
-/* line 215, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .about-me .home-container .curiosity {
   font-size: 46px;
   font-family: "curosity";
 }
 
-/* line 222, ../sass/main.scss */
-.examples-contact, .skills {
-  padding: 64px;
+/* line 234, ../sass/main.scss */
+.blog p {
+  font-size: 33px;
+  color: #F3C363;
+  font-family: "innerhero", "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 43px;
+  margin-top: 105px;
 }
-/* line 229, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
+.blog p a {
+  color: #669999;
+}
+
+/* line 254, ../sass/main.scss */
 .examples-contact li, .skills li {
-  font-size: 34px;
+  font-size: 33px;
   color: #F3C363;
   font-family: "innerhero", "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 43px;
 }
 
-/* line 238, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
 .examples-contact ul li {
   font-size: 36px;
 }
-/* line 241, ../sass/main.scss */
+/* line 266, ../sass/main.scss */
 .examples-contact ul li a {
   text-decoration: none;
+  font-size: 33px;
   color: #F3C363;
   font-family: "innerhero", "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 65px;
 }
