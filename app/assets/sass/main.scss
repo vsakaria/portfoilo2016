@@ -1,6 +1,7 @@
 @import 'base/typography';
 @import 'base/reset';
 @import 'base/theme';
+@import 'utils/breaks_points';
 @import 'utils/animation_mixins';
 
 .main-container {
@@ -13,7 +14,7 @@
 
 main {
     background-color: $base-background-color;
-    height: 100vh;
+    height: 100%;
     text-align: center;
 }
 
@@ -41,6 +42,10 @@ main {
         right: 31px;
         height: 34px;
         width: 38px;
+
+        @include MQ(M) {
+            display: none;
+        }
 
         .burger-line {
             width: 38px;
@@ -92,12 +97,12 @@ main {
     }
 }
 
-.nav-container {
+.nav-container-mobile {
     position: absolute;
     top: -100vh;
     padding-top: 24px;
     text-align: center;
-    height: 100vh;
+    height: calc(100vh + 74px);
     width: 100%;
     font-family: $title-font;
     background-color: $secondary-background-color;
@@ -154,6 +159,11 @@ main {
 .main-container {
     padding: 30px 20px;
     text-align: center;
+    height: calc(100vh + 150px);
+
+    @include MQ(M) {
+        padding: 76px 20px;
+    }
 
     header {
         color: #F3C363;
@@ -162,11 +172,23 @@ main {
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 31px;
+
+        @include MQ(M) {
+            font-size: 31px;
+            margin-bottom: 66px;
+        }
     }
 }
 
+.sub-text {
+    color: #F3C363;
+    -webkit-font-smoothing: antialiased;
+    font-family: $reading-font;
+    font-size: 13px;
+    line-height: 16px;
+}
+
 .about-me {
-    margin-bottom: $default-margin;
 
     ul li {
         line-height: 40px;
@@ -174,18 +196,28 @@ main {
         margin-bottom: 30px;
         color: $base-foreground-color;
 
+        @include MQ(M) {
+            font-size: 71px;
+            line-height: 68px;
+        }
+
         .sub-charactistics {
-            color: #F3C363;
-            -webkit-font-smoothing: antialiased;
-            font-family: $reading-font;
-            font-size: 13px;
-            line-height: 16px;
+            @extend .sub-text;
+
+            @include MQ(M) {
+                font-size: 20px;
+            }
+
         }
     }
 
     .coding {
         font-size: 49px;
         font-family: 'Courier New';
+
+        @include MQ(M) {
+            font-size: 75px;
+        }
     }
 
     .commerce {
@@ -198,12 +230,20 @@ main {
 
     .communcation {
         font-size: 32px;
-        font-family: 'communcation'
+        font-family: 'communcation';
+
+        @include MQ(M) {
+            font-size: 58px;
+        }
     }
 
     .curiosity {
         font-size: 46px;
-        font-family: 'curosity'
+        font-family: 'curosity';
+
+        @include MQ(M) {
+            font-size: 78px;
+        }
     }
 }
 
@@ -229,6 +269,24 @@ main {
 .skills {
     li {
         @extend .main-container-text;
+
+        @include MQ(M) {
+            font-size: 55px;
+            line-height: 55px;
+            margin-bottom: 35px;
+        }
+
+        .sub-skills {
+            @extend .sub-text;
+            color: white;
+            display: none;
+
+            @include MQ(M) {
+                display: block;
+                font-size: 19px;
+                line-height: 20px;
+            }
+        }
     }
 }
 
@@ -237,5 +295,10 @@ main {
         @extend .main-container-text;
         line-height: 65px;
         text-decoration: none;
+
+        @include MQ(M) {
+            font-size: 55px;
+            line-height: 115px;
+        }
     }
 }

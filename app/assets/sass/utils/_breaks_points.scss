@@ -1,10 +1,10 @@
 $S: 321px;
-$M: 769px;
-$L: 1441px;
+$M: 768px;
+$L: 1024px;
 
 @mixin MQ($canvas) {
   @if $canvas == M {
-    @media only screen and (min-width: $S) and (max-width: $M - 1) { @content; }
+    @media only screen and (min-width: $M) and (max-width: $L) { @content; }
   }
   @else if $canvas == L {
     @media only screen and (min-width: $M) and (max-width: $L - 1) { @content; }
