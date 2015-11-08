@@ -25,7 +25,6 @@ main {
     position: relative;
     z-index: 1;
 
-
     //I have one element float left and one positioned L39 is this ok?
     .header-title {
         color: $primary-foreground-color;
@@ -34,6 +33,12 @@ main {
         line-height: 24px;
         font-family: $title-font;
         -webkit-font-smoothing: antialiased;
+
+
+        @include MQ(M) {
+            text-align: center;
+            float: none;
+        }
     }
 
     .burger-container {
@@ -132,6 +137,26 @@ main {
     }
 }
 
+.nav-container-large {
+
+    text-align: center;
+    background-color: $primary-background-color;
+    border-top: 1px solid black;
+
+    li {
+        display: inline-block;
+        width: calc(100vw / 6);
+        font-family: $title-font;
+        padding: 20px 0px;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 23px;
+        }
+    }
+}
+
 
 .nav-location {
     background-color: $secondary-background-color;
@@ -139,6 +164,10 @@ main {
     border-bottom: 1px solid $primary-foreground-color;
     font-family: $title-font;
     padding: 13px 37px 0px 39px;
+
+    @include MQ(M) {
+        padding: 20px 37px 7px 39px;
+    }
 
     header {
         @include transition(top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94));
@@ -151,6 +180,10 @@ main {
 
         &.animate-location-title {
             top: -40px;
+        }
+
+        @include MQ(M) {
+            font-size: 25px;
         }
     }
 }
@@ -295,6 +328,7 @@ main {
         @extend .main-container-text;
         line-height: 65px;
         text-decoration: none;
+        border-bottom: 1px solid #D0C21B;
 
         @include MQ(M) {
             font-size: 55px;
