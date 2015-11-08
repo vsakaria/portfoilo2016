@@ -231,6 +231,7 @@ main {
 
 /* line 140, ../sass/main.scss */
 .nav-container-large {
+  display: none;
   text-align: center;
   background-color: #F3C363;
   border-top: 1px solid black;
@@ -248,8 +249,14 @@ main {
   color: black;
   font-size: 23px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 140, ../sass/main.scss */
+  .nav-container-large {
+    display: block;
+  }
+}
 
-/* line 161, ../sass/main.scss */
+/* line 165, ../sass/main.scss */
 .nav-location {
   background-color: #669999;
   height: 30px;
@@ -258,12 +265,12 @@ main {
   padding: 13px 37px 0px 39px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 161, ../sass/main.scss */
+  /* line 165, ../sass/main.scss */
   .nav-location {
     padding: 20px 37px 7px 39px;
   }
 }
-/* line 172, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .nav-location header {
   -webkit-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   -moz-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
@@ -276,30 +283,30 @@ main {
   position: relative;
   top: 0;
 }
-/* line 181, ../sass/main.scss */
+/* line 185, ../sass/main.scss */
 .nav-location header.animate-location-title {
   top: -40px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 172, ../sass/main.scss */
+  /* line 176, ../sass/main.scss */
   .nav-location header {
     font-size: 25px;
   }
 }
 
-/* line 192, ../sass/main.scss */
+/* line 196, ../sass/main.scss */
 .main-container {
   padding: 30px 20px;
   text-align: center;
   height: calc(100vh + 150px);
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 192, ../sass/main.scss */
+  /* line 196, ../sass/main.scss */
   .main-container {
     padding: 76px 20px;
   }
 }
-/* line 201, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 .main-container header {
   color: #F3C363;
   -webkit-font-smoothing: antialiased;
@@ -309,14 +316,14 @@ main {
   margin-bottom: 31px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 201, ../sass/main.scss */
+  /* line 205, ../sass/main.scss */
   .main-container header {
     font-size: 31px;
     margin-bottom: 66px;
   }
 }
 
-/* line 216, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 .sub-text, .about-me ul li .sub-charactistics, .skills li .sub-skills {
   color: #F3C363;
   -webkit-font-smoothing: antialiased;
@@ -325,7 +332,7 @@ main {
   line-height: 16px;
 }
 
-/* line 226, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 .about-me ul li {
   line-height: 40px;
   font-size: 40px;
@@ -333,61 +340,61 @@ main {
   color: #ffffff;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 226, ../sass/main.scss */
+  /* line 230, ../sass/main.scss */
   .about-me ul li {
     font-size: 71px;
     line-height: 68px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 237, ../sass/main.scss */
+  /* line 241, ../sass/main.scss */
   .about-me ul li .sub-charactistics {
     font-size: 20px;
   }
 }
-/* line 247, ../sass/main.scss */
+/* line 251, ../sass/main.scss */
 .about-me .coding {
   font-size: 49px;
   font-family: 'Courier New';
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 247, ../sass/main.scss */
+  /* line 251, ../sass/main.scss */
   .about-me .coding {
     font-size: 75px;
   }
 }
-/* line 256, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .about-me .commerce {
   font-family: 'Playfair Display SC', serif;
 }
-/* line 260, ../sass/main.scss */
+/* line 264, ../sass/main.scss */
 .about-me .creativity {
   font-family: 'creative', cursive;
 }
-/* line 264, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 .about-me .communcation {
   font-size: 32px;
   font-family: 'communcation';
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 264, ../sass/main.scss */
+  /* line 268, ../sass/main.scss */
   .about-me .communcation {
     font-size: 58px;
   }
 }
-/* line 273, ../sass/main.scss */
+/* line 277, ../sass/main.scss */
 .about-me .curiosity {
   font-size: 46px;
   font-family: 'curosity';
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 273, ../sass/main.scss */
+  /* line 277, ../sass/main.scss */
   .about-me .curiosity {
     font-size: 78px;
   }
 }
 
-/* line 283, ../sass/main.scss */
+/* line 287, ../sass/main.scss */
 .main-container-text, .blog p, .skills li, .cv-contact a, .portfolio a {
   font-size: 33px;
   color: #F3C363;
@@ -396,30 +403,40 @@ main {
   line-height: 43px;
 }
 
-/* line 292, ../sass/main.scss */
+/* line 297, ../sass/main.scss */
+.blog .blog-video {
+  display: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 297, ../sass/main.scss */
+  .blog .blog-video {
+    display: inline-block;
+  }
+}
+/* line 305, ../sass/main.scss */
 .blog p {
   margin-top: 105px;
 }
-/* line 296, ../sass/main.scss */
+/* line 309, ../sass/main.scss */
 .blog p a {
   color: #669999;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 303, ../sass/main.scss */
+  /* line 316, ../sass/main.scss */
   .skills li {
     font-size: 55px;
     line-height: 55px;
     margin-bottom: 35px;
   }
 }
-/* line 312, ../sass/main.scss */
+/* line 325, ../sass/main.scss */
 .skills li .sub-skills {
   color: white;
   display: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 312, ../sass/main.scss */
+  /* line 325, ../sass/main.scss */
   .skills li .sub-skills {
     display: block;
     font-size: 19px;
@@ -427,14 +444,14 @@ main {
   }
 }
 
-/* line 327, ../sass/main.scss */
+/* line 340, ../sass/main.scss */
 .cv-contact a, .portfolio a {
   line-height: 65px;
   text-decoration: none;
   border-bottom: 1px solid #D0C21B;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 327, ../sass/main.scss */
+  /* line 340, ../sass/main.scss */
   .cv-contact a, .portfolio a {
     font-size: 55px;
     line-height: 115px;
