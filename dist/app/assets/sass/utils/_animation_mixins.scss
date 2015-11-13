@@ -1,0 +1,20 @@
+@mixin transformRotate($angle) {
+    -webkit-transform: rotate($angle);
+    -moz-transform: rotate($angle);
+    -o-transform: rotate($angle);
+    transform: rotate($angle);
+}
+
+@mixin transformOrigin($point1, $point2) {
+    -webkit-transform-origin: $point1 $point2;
+    -moz-transform-origin: $point1 $point2;
+    -o-transform-origin: $point1 $point2;
+    transform-origin: $point1 $point2;
+}
+
+@mixin transition($transition...) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
