@@ -16,8 +16,10 @@ var addBurgerEvents = function() {
 
 var addMobileEvents = function() {
 
-$('.nav-container-mobile').on('click', function(e) {
+$('.nav-links').on('click', function(e) {
         if($(this).hasClass('nav-container-large')) return;
+
+        debugger;
 
         var title = e.target.innerHTML;
         var page = $(e.target).data('page');
